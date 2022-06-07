@@ -13,12 +13,14 @@
             <th></th>
         </tr>
         <tbody>
+            @foreach($categorias as $categoria)
             <tr>
-                <td></td>
+                <td>{{ $categoria->id }}</td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
+            @endforeach
         </tbody>
     </thead>
 </table>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoriaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,9 @@ Route::get('/', function () {
     return view('principal');
 });
 
-Route::get('/categoria', function () {
-    return view('categorias.index');
-});
+Route::get('/categoria', [CategoriaController::class, 'index']);
+
+// Route::get('/categoria', function () {
+//     return view('categorias.index');
+// });
 
